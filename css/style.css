@@ -3,7 +3,37 @@
 @import url(bootstrap-reboot.css);
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,500;0,700;1,400&family=Montserrat:ital@1&display=swap");
 body {
-  font-family: 'Asap', sans-serif; }
+  font-family: 'Asap', sans-serif;
+  color: #4d4d4d; }
+
+h3 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px; }
+  h3:before {
+    content: "";
+    display: block;
+    background-color: #4d4d4d;
+    height: 4px;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 18px; }
+
+.button {
+  display: inline-block;
+  color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+  padding: 20px;
+  line-height: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none; }
+  .button:hover {
+    background-color: white;
+    border: white;
+    color: #4d4d4d;
+    text-decoration: none;
+    box-shadow: 5px 5px 7px 3px #ababab; }
 
 .main_page {
   background-image: url("../images/main-page_01.jpg");
@@ -22,5 +52,39 @@ body {
     width: 100%; }
   .main_page ul li a {
     color: #4d4d4d; }
+  .main_page h1 {
+    font-size: 90px;
+    font-weight: 500;
+    margin-top: 25vh; }
+  .main_page p {
+    color: #909090;
+    font-weight: 500;
+    font-size: 22px; }
+  .main_page .button {
+    max-width: 160px;
+    width: 100%; }
+
+.about {
+  padding-top: 110px;
+  padding-bottom: 120px; }
+  .about h3:before {
+    margin-left: 2px; }
+  .about .button {
+    max-width: 250px;
+    width: 100%; }
+
+.services {
+  background-color: #f6f6f6;
+  padding-top: 120px;
+  padding-bottom: 30px; }
+  .services .serv-item {
+    margin-bottom: 80px; }
+    .services .serv-item .serv-img {
+      width: 90px;
+      margin: auto; }
+
+.skills {
+  padding-top: 116px;
+  padding-bottom: 120px; }
 
 /*# sourceMappingURL=style.css.map */
