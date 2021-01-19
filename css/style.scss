@@ -1,6 +1,9 @@
 @import "bootstrap.css";
 @import "bootstrap-grid.css";
 @import "bootstrap-reboot.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "Chart.css";
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,500;0,700;1,400&family=Montserrat:ital@1&display=swap');
 
 body{
@@ -105,4 +108,60 @@ h3{
 .skills{
   padding-top: 116px;
   padding-bottom: 120px;
+  canvas{
+    background-color: #fafafa;
+    width: 100%;
+  }
+}
+.portfolio{
+  background-color: #f6f6f6;
+  padding-top: 120px;
+  padding-bottom: 130px;
+  .button{
+    max-width: 190px;
+    width: 100%;
+  }
+}
+.testimonials{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .feedback{
+    border: 1px solid #212121;
+    padding: 80px;
+    h4{
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    h6{
+      font-size: 12px;
+      font-weight: 700;
+    }
+    p{
+      color: #7a7a7a;
+    }
+  }
+  .owl-dots{
+    margin-top: -90px;
+    text-align: center;
+    .owl-dot {
+      outline: none;
+      margin: 2px;
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #212121;
+      }
+      &.active span {
+        background-color: #212121;
+      }
+    }
+  }
+  .descriptions{
+    background-color: #f6f6f6;
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
