@@ -13,14 +13,14 @@
 <section class="main_page">
     <div class="container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light row justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse col-md-5" id="navbarNav">
-                    <ul class="navbar-nav justify-content-between w-100" id="menu-yak">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" id="menu-yak">
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#">Home</a>
                         </li>
@@ -31,25 +31,27 @@
                             <a class="nav-link text-uppercase" href="#services">service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">Portfolio</a>
+                            <a class="nav-link text-uppercase" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#">contact</a>
+                            <a class="nav-link text-uppercase" href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h1>Luis Oenrique</h1>
-        <p>User Experience / User Interface Expert</p>
-        <a href="#" class="button text-uppercase bg-white border-white text-center mr-3">know more</a>
-        <a href="#" class="button text-uppercase text-center">hire me</a>
+        <div class="main-screen">
+            <h1>Luis Oenrique</h1>
+            <p>User Experience / User Interface Expert</p>
+            <a href="#" class="button text-uppercase bg-white border-white text-center mr-3">know more</a>
+            <a href="#" class="button text-uppercase text-center">hire me</a>
+        </div>
     </div>
 </section>
 <section class="about" id="about">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5 mb-3">
                 <h3 class="text-uppercase">KNOW MORE<br>
                     ABOUT ME</h3>
                 <p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
@@ -58,10 +60,13 @@
                     quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                 <a href="#" class="button text-uppercase text-center">DOWNLOAD MY CV</a>
             </div>
-            <div class="col-md-6 offset-md-1">
+            <div class="col-md-6 offset-md-1 mb-3">
                 <img src="images/about-img_03.jpg" alt="image" class="w-100">
             </div>
         </div>
+    </div>
+    <div id="back-top">
+        <a href="#" id="up"><i class="fas fa-angle-up"></i></a>
     </div>
 </section>
 <section class="services" id="services">
@@ -116,18 +121,18 @@
         </div>
     </div>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="container text-center">
         <h3 class="text-uppercase text-center mb-5">portfolio</h3>
         <div class="row mb-5">
-            <a href="#" class="col-md-4"><img src="images/portfolio-1_03.jpg" alt="image"></a>
-            <a href="#" class="col-md-4"><img src="images/portfolio-2_05.jpg" alt="image"></a>
-            <a href="#" class="col-md-4"><img src="images/portfolio-3_07.jpg" alt="image"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-1_03.jpg" class="gallery-image w-100" alt="image"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-2_05.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-3_07.jpg" class="gallery-image w-100" alt="image"></a>
         </div>
         <div class="row mb-5">
-            <a href="#" class="col-md-4"><img src="images/portfolio-4_12.jpg" alt="image"></a>
-            <a href="#" class="col-md-4"><img src="images/portfolio-5_03.jpg" alt="image"></a>
-            <a href="#" class="col-md-4"><img src="images/portfolio-6_14.jpg" alt="image"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-4_12.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-5_03.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-6_14.jpg" alt="image" class="gallery-image w-100"></a>
         </div>
         <a href="#" class="button text-uppercase text-center">load more</a>
     </div>
@@ -179,14 +184,55 @@
     <div class="descriptions">
         <div class="container">
             <div class="row">
-                <div class="w-25 text-center"><i class="fas fa-laptop-house"></i></div>
-                <div class="w-25 text-center"><i class="far fa-grin"></i></div>
-                <div class="w-25 text-center"><i class="fas fa-clipboard-list"></i></div>
-                <div class="w-25 text-center"><i class="fas fa-coffee"></i></div>
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-laptop-house"></i><p class="h4 text-uppercase mt-4"><strong>120</strong><br>hands to work</p>
+                </div>
+                <div class="col-md-3 text-center mb-3">
+                    <i class="far fa-grin"></i><p class="h4 text-uppercase mt-4"><strong>310</strong><br>happy clients</p>
+                </div>
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-clipboard-list"></i><p class="h4 text-uppercase mt-4"><strong>510</strong><br>finished
+                    projects</p>
+                </div>
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-coffee"></i><p class="h4 text-uppercase mt-4"><strong>720</strong><br>cups of coffee</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<footer id="contact">
+    <div class="container">
+        <h3 class="text-uppercase text-center mb-5">say hello!</h3>
+        <div class="row">
+            <form class="col-8 offset-2 text-center">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control mt-2" rows="6" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default text-uppercase mt-3">Send<i class="fas fa-play ml-2"></i></button>
+            </form>
+        </div>
+        <div class="bottom_footer row align-items-center">
+            <div class="soc col-lg-4 col-md-6">
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-behance"></i></a>
+                <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <div class="col-lg-4 col-md-6"><h6 class="text-white text-center">2017. All Right Reserved</h6></div>
+        </div>
+    </div>
+</footer>
 </body>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/owl.carousel.js"></script>

@@ -6,6 +6,12 @@
 @import "Chart.css";
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,500;0,700;1,400&family=Montserrat:ital@1&display=swap');
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 body{
   font-family: 'Asap', sans-serif;
   color: #4d4d4d;
@@ -33,9 +39,10 @@ h3{
   font-weight: 500;
   transition: 0.5s;
   text-decoration: none;
+  box-shadow: 5px 5px 7px 3px transparent;
   &:hover {
     background-color: white;
-    border: white;
+    border: 1px solid white;
     color: #4d4d4d;
     text-decoration: none;
     box-shadow: 5px 5px 7px 3px #ababab;
@@ -47,6 +54,19 @@ h3{
   background-size: cover;
   align-items: center;
   position: relative;
+  .main-screen{
+    position: absolute;
+    bottom: 40vh;
+    @include max-screen (736px) {
+      bottom: 10vh;
+    }
+  }
+  .navbar-collapse{
+    @include max-screen(740px) {
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 5;
+    }
+  }
   ul{
     li{
       &:after {
@@ -60,15 +80,33 @@ h3{
       &:hover:after{
           width: 100%;
         }
+      @include max-screen (768px) {
+        padding-right: 15px;
+      }
       a{
         color: #4d4d4d;
+        @include max-screen (768px) {
+          text-align: right;
+        }
       }
     }
+  }
+  .navbar-toggler{
+    border-radius: 0;
+    border: none;
+    &:hover, &:focus{
+      border: none;
+    }
+  }
+  button:focus {
+    outline: none;
   }
   h1{
     font-size: 90px;
     font-weight: 500;
-    margin-top: 25vh;
+    @include max-screen (736px) {
+      font-size: 60px;
+    }
   }
   p{
     color: #909090;
@@ -91,6 +129,39 @@ h3{
   .button{
     max-width: 250px;
     width: 100%;
+  }
+}
+#back-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 0;
+  z-index: 5;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  @include max-screen(768px) {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+  }
+}
+#back-top a{
+  font-size: 30px;
+  line-height: 30px;
+  display:block;
+  padding-top: 7px;
+  color: #60605f;
+  text-decoration:none;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  text-align: center;
+  @include max-screen(768px) {
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 .services{
@@ -117,6 +188,12 @@ h3{
   background-color: #f6f6f6;
   padding-top: 120px;
   padding-bottom: 130px;
+  .gallery-image{
+    box-shadow: 5px 5px 7px 7px transparent;
+    &:hover {
+      box-shadow: 5px 5px 7px 7px #ababab;
+    }
+  }
   .button{
     max-width: 190px;
     width: 100%;
@@ -124,10 +201,12 @@ h3{
 }
 .testimonials{
   padding-top: 120px;
-  padding-bottom: 120px;
-  .feedback{
+  padding-bottom: 150px;
+  .owl-carousel{
     border: 1px solid #212121;
-    padding: 80px;
+    padding: 80px 90px 40px;
+  }
+  .feedback{
     h4{
       font-weight: 700;
       font-size: 30px;
@@ -142,7 +221,6 @@ h3{
     }
   }
   .owl-dots{
-    margin-top: -90px;
     text-align: center;
     .owl-dot {
       outline: none;
@@ -160,8 +238,82 @@ h3{
   }
   .descriptions{
     background-color: #f6f6f6;
-    margin-top: 80px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 140px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    i{
+      font-size: 60px;
+      color: #585858;
+    }
+  }
+}
+footer{
+  background-image: url("../images/footer-bg_02.jpg");
+  background-size: cover;
+  padding-bottom: 28px;
+  h3{
+    color: white;
+    padding-top: 144px;
+    &:before{
+      background-color: #c1c1c1;
+    }
+  }
+  .form-control{
+    border-radius: 0;
+    border: none;
+  }
+  form{
+    i{
+      font-size: 14px;
+    }
+  }
+  .btn {
+    height: 50px;
+    width: 124px;
+    color: #4d4d4d;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    margin-bottom: 58px;
+    transition: 0.3s;
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  .bottom_footer{
+    .soc{
+      @include max-screen(740px) {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+    .soc-item {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background-color: white;
+      margin: 5px;
+      line-height: 28px;
+      transition: 0.5s;
+      &:hover {
+        background-color: #0084b4;
+      }
+      &:hover i{
+        color: white;
+      }
+      i {
+        font-size: 16px;
+        color: #4d4d4d;
+      }
+    }
+    &:before{
+      content: "";
+      display: block;
+      background-color: white;
+      height: 1px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
 }

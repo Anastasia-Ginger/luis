@@ -17,6 +17,17 @@ $(document).ready(function(){
     });
 });
 
+(function($) {
+    $(function() {
+
+        $('#up').click(function() {
+            $('body,html').animate({scrollTop:0},500);
+            return false;
+        })
+
+    })
+})(jQuery)
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     type: 'line',
@@ -54,6 +65,6 @@ $(document).ready(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 1000);
     });
 });
