@@ -43,16 +43,16 @@
         <div class="main-screen">
             <h1>Luis Oenrique</h1>
             <p>User Experience / User Interface Expert</p>
-            <a href="#" class="button text-uppercase bg-white border-white text-center mr-3">know more</a>
-            <a href="#" class="button text-uppercase text-center">hire me</a>
+            <a href="#" class="button text-uppercase bg-white border-white text-center mr-3 mb-3">know more</a>
+            <a href="#" class="button text-uppercase text-center mb-3">hire me</a>
         </div>
     </div>
 </section>
 <section class="about" id="about">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-5 mb-3">
-                <h3 class="text-uppercase">KNOW MORE<br>
+            <div class="col-md-5 mb-5">
+                <h3 class="text-uppercase mb-3">KNOW MORE<br>
                     ABOUT ME</h3>
                 <p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
                     eget dolor. Aenean
@@ -60,7 +60,7 @@
                     quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                 <a href="#" class="button text-uppercase text-center">DOWNLOAD MY CV</a>
             </div>
-            <div class="col-md-6 offset-md-1 mb-3">
+            <div class="col-md-6 offset-md-1 mb-5">
                 <img src="images/about-img_03.jpg" alt="image" class="w-100">
             </div>
         </div>
@@ -124,29 +124,36 @@
 <section class="portfolio" id="portfolio">
     <div class="container text-center">
         <h3 class="text-uppercase text-center mb-5">portfolio</h3>
-        <div class="row mb-5">
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-1_03.jpg" class="gallery-image w-100" alt="image"></a>
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-2_05.jpg" alt="image" class="gallery-image w-100"></a>
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-3_07.jpg" class="gallery-image w-100" alt="image"></a>
+        <div class="row">
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-1_03.jpg" class="gallery-image w-100" alt="image"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-2_05.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-3_07.jpg" class="gallery-image w-100" alt="image"></a>
         </div>
-        <div class="row mb-5">
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-4_12.jpg" alt="image" class="gallery-image w-100"></a>
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-5_03.jpg" alt="image" class="gallery-image w-100"></a>
-            <a href="#" class="col-md-4 pr-3 pl-3 mb-3"><img src="images/portfolio-6_14.jpg" alt="image" class="gallery-image w-100"></a>
+        <div class="row">
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-4_12.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-5_03.jpg" alt="image" class="gallery-image w-100"></a>
+            <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-6_14.jpg" alt="image" class="gallery-image w-100"></a>
+        </div> <span id="dots"></span>
+        <div id="more">
+            <div class="row">
+                <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-4_12.jpg" alt="image" class="gallery-image w-100"></a>
+                <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-5_03.jpg" alt="image" class="gallery-image w-100"></a>
+                <a href="#" class="col-md-4 pr-3 pl-3 mb-5"><img src="images/portfolio-6_14.jpg" alt="image" class="gallery-image w-100"></a>
+            </div>
         </div>
-        <a href="#" class="button text-uppercase text-center">load more</a>
+        <a onclick="myFunction()" id="myBtn" class="button text-uppercase text-center nav-toggle">load more</a>
     </div>
 </section>
 <section class="testimonials">
     <div class="container">
         <h3 class="text-uppercase text-center mb-5">Testimonials</h3>
         <div class="row">
-            <div class="owl-carousel col-10 offset-1">
-                <div class="feedback m-2 d-flex flex-wrap">
-                    <div class="w-25">
+            <div class="owl-carousel col-lg-10 offset-lg-1">
+                <div class="feedback m-2 row">
+                    <div class="col-lg-3 col-md-4 mb-3">
                         <img src="images/testimonials_03.jpg" alt="photo" class="w-100">
                     </div>
-                    <div class="w-75 pl-5">
+                    <div class="col-lg-9 col-md-8 pl-5 mb-3">
                         <h4 class="text-uppercase">Limara tusi </h4>
                         <h6 class="text-uppercase"><em>CEO, RanDOM COMPANY</em></h6>
                         <p class="text-uppercase mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -154,11 +161,11 @@
                             quam felis, ultricies nec,</p>
                     </div>
                 </div>
-                <div class="feedback m-2 d-flex flex-wrap">
-                    <div class="w-25">
+                <div class="feedback m-2 row">
+                    <div class="col-lg-3 col-md-4 mb-3">
                         <img src="images/testimonials_03.jpg" alt="photo" class="w-100">
                     </div>
-                    <div class="w-75 pl-5">
+                    <div class="col-lg-9 col-md-8 pl-5 mb-3">
                         <h4 class="text-uppercase">Limara tusi </h4>
                         <h6 class="text-uppercase"><em>CEO, RanDOM COMPANY</em></h6>
                         <p class="text-uppercase mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -166,11 +173,11 @@
                             quam felis, ultricies nec,</p>
                     </div>
                 </div>
-                <div class="feedback m-2 d-flex flex-wrap">
-                    <div class="w-25">
+                <div class="feedback m-2 row">
+                    <div class="col-lg-3 col-md-4 mb-3">
                         <img src="images/testimonials_03.jpg" alt="photo" class="w-100">
                     </div>
-                    <div class="w-75 pl-5">
+                    <div class="col-lg-9 col-md-8 pl-5 mb-3">
                         <h4 class="text-uppercase">Limara tusi </h4>
                         <h6 class="text-uppercase"><em>CEO, RanDOM COMPANY</em></h6>
                         <p class="text-uppercase mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -184,17 +191,17 @@
     <div class="descriptions">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 text-center mb-3">
+                <div class="col-md-3 text-center mb-5">
                     <i class="fas fa-laptop-house"></i><p class="h4 text-uppercase mt-4"><strong>120</strong><br>hands to work</p>
                 </div>
-                <div class="col-md-3 text-center mb-3">
+                <div class="col-md-3 text-center mb-5">
                     <i class="far fa-grin"></i><p class="h4 text-uppercase mt-4"><strong>310</strong><br>happy clients</p>
                 </div>
-                <div class="col-md-3 text-center mb-3">
+                <div class="col-md-3 text-center mb-5">
                     <i class="fas fa-clipboard-list"></i><p class="h4 text-uppercase mt-4"><strong>510</strong><br>finished
                     projects</p>
                 </div>
-                <div class="col-md-3 text-center mb-3">
+                <div class="col-md-3 text-center mb-5">
                     <i class="fas fa-coffee"></i><p class="h4 text-uppercase mt-4"><strong>720</strong><br>cups of coffee</p>
                 </div>
             </div>
@@ -205,7 +212,7 @@
     <div class="container">
         <h3 class="text-uppercase text-center mb-5">say hello!</h3>
         <div class="row">
-            <form class="col-8 offset-2 text-center">
+            <form class="col-md-8 offset-md-2 text-center">
                 <div class="row">
                     <div class="form-group col-md-6">
                         <input type="text" class="form-control" placeholder="Name">
@@ -221,7 +228,7 @@
             </form>
         </div>
         <div class="bottom_footer row align-items-center">
-            <div class="soc col-lg-4 col-md-6">
+            <div class="soc col-lg-4 col-md-6 col-sm-12">
                 <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-twitter"></i></a>
                 <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-linkedin-in"></i></a>
@@ -229,7 +236,7 @@
                 <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-behance"></i></a>
                 <a href="#" title="" target="_blank" class="text-center soc-item"><i class="fab fa-google-plus-g"></i></a>
             </div>
-            <div class="col-lg-4 col-md-6"><h6 class="text-white text-center">2017. All Right Reserved</h6></div>
+            <div class="col-lg-4 col-md-6 col-sm-12"><h6 class="text-white text-center">2017. All Right Reserved</h6></div>
         </div>
     </div>
 </footer>
