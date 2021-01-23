@@ -24,11 +24,11 @@ function myFunction() {
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "+Read more";
+        btnText.innerHTML = "Load more";
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Hide text";
+        btnText.innerHTML = "Hide";
         moreText.style.display = "inline";
     }
 }
